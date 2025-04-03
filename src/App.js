@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import Header from "./components/Header"
+import Home from "./components/Home";
 import About from "./components/About";
 
 import './App.css';
@@ -13,6 +14,7 @@ function App() {
     <>
       <Header sideBar={sideBarTitle} />
       <main>
+        <Home />
         <About />
       </main>
     </>

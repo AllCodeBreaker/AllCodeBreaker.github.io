@@ -1,19 +1,27 @@
 header{
     margin: 0;
-    padding: 0px 15px ;
-
     background-color: var(--primary);
     color: var(--secondary);
 }
 
 
-header{
+header div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    padding: 0 10px;
+}
+
+header{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    border-bottom: 1px solid white;
 }
 header nav{
-    padding-top: 30px;
+    padding-top: 35px;
 }
 nav a{
     padding: 10px;
@@ -27,4 +35,14 @@ nav a:hover {
 header p{
     font-size: 24px;
     color: var(--green);
+}
+
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

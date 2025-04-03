@@ -3,23 +3,22 @@ import "./about.css"
 const About = ()=>{
     
     return(
-        <>
-            <section id="home">
-                <div>
-                    <h3>Hi, I'm Allwin</h3>
-                    <span className="gray">Full Stack Developer</span>
-                    <p>
-                        <a href="#skills" className="btn" >Learn More</a>
-                    </p>
-                </div>
-                <div>
-                    <img className="circle" src="myimg.jpg" alt="Allwin" />    
-                </div>
+        <section id="about">
+            <center>
+            <h3>About Us</h3>
+            <div className="container">
+                <p>
+                    I am Allwin, a software developer with a passion for building scalable and efficient software systems. I have a strong background in
+                    fundamentals of computer science and a keen interest programming. I am a lifelong self taught learner and enjoy
+                    learning new technologies and techniques. I am a strong believer in the importance of code quality and maintain
 
-            </section>
-        </>
+                </p>             
+            </div>
+        
+            </center>
+            
+        </section>
     );
-
 }
 
 export default About;

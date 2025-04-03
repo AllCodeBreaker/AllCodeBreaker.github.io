@@ -1,0 +1,65 @@
+.gray{
+    color: var(--gray1);
+}
+#home div img{
+    width: 400px;
+    height: 400px;
+}
+.circle{
+    border-radius: 35%;
+    border: 10px solid black;
+}
+
+#home .btn{
+    border: 1px solid white;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#home .btn:hover{
+    background-color: var(--green);
+    transition: 0.3s;
+}
+
+#type{
+    color: var(--gray1);
+    width: 20px;
+    height: 5px;
+    display: inline;
+}
+
+#home{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+
+}
+
+#allwin-about{
+    margin-top: 100px;
+    font-size: x-large;
+    width: 50%;
+}
+#image{
+    width: 50%;
+}
+@media screen and (max-width: 850px) {
+    #home{
+        margin-top: 8rem; 
+        display: flex;
+        flex-direction: column-reverse;
+        /* justify-content: center; */
+        align-items: center;
+    }   
+    
+    #allwin-about{
+        margin-top: 20px;
+        font-size: larger;
+    }
+    #home div img{
+        width: 300px;
+        height: 300px;
+    }
+}

@@ -8,12 +8,16 @@ const Header = (props)=>{
     return(
         <>
             <header>
-                <p>allCodeBreaker</p>
+                <div>
+                    <p>allCodeBreaker</p>
                     <nav>
-                        {sideBar.map((name) => <a href={`#$(name)`}  key={name}>{name}</a>)}
-                    </nav>        
+                        {sideBar.map((name) => <a href={`#${name}`}  key={name}>{name}</a>)}
+                    </nav>
+                
+                </div>
+                           
             </header>
-            <hr />
+            
         </>
     );
 }

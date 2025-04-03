@@ -1,6 +1,6 @@
 
 const sideBarTitle = {
-    'home': ['Home', 'About', 'Skills', 'Works', 'Contact'],
+    'home': ['home', 'about', 'skills', 'works', 'contact'],
     'cheatsheet' : []
 }
 
