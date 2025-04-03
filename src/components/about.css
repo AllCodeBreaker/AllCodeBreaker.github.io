@@ -1,0 +1,27 @@
+.gray{
+    color: var(--gray1);
+}
+
+.circle{
+    border-radius: 60%;
+}
+#home{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+.btn{
+    border: 1px solid white;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: var(--green);
+    transition: 0.3s;
+}
+#home div img{
+    width: 300px;
+    height: 300px;
+}
