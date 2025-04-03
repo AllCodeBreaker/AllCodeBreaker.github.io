@@ -4,9 +4,13 @@
   --gray1:#828282;
   --gray2: #4F4F4F;
   --green: #27AE60;
+  --brown: #333;
 
 }
 
+main{
+  margin-top: 60px;
+}
 
 a{
   text-decoration: none;
@@ -25,4 +29,5 @@ body{
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }

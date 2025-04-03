@@ -1,4 +1,4 @@
-import "./about.css"
+import "./css/about.css"
 
 const About = ()=>{
     
@@ -14,8 +14,31 @@ const About = ()=>{
 
                 </p>             
             </div>
-        
+            <div className="social-media">
+                <div>
+                <a href="https://www.instagram.com/allcodebreaker/" target="_blank" rel="noopener noreferrer">
+                    <span><i className="fab fa-instagram"></i></span>    
+                    <p>allCodeBreaker</p>
+                </a>
+                        
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/allwin-a-023970291/" target="_blank" rel="noopener noreferrer">
+                        <span><i className="fab fa-linkedin"></i></span>
+                        <p>Allwin A</p>
+                    </a>
+                    
+                </div>
+                <div>
+                    <a href="https://github.com/AllCodeBreaker/" target="_blank" rel="noopener noreferrer">
+                        <span><i className="fab fa-github"></i></span>
+                        
+                    <p>allCodeBreaker</p>
+                    </a>
+                </div>
+                </div>
             </center>
+            
             
         </section>
     );
