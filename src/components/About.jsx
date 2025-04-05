@@ -3,7 +3,7 @@ import "./css/about.css"
 const About = ()=>{
     
     return(
-        <section id="about">
+        <section id="about" className="animate__animated animate__backInUp ">
             <center>
             <h3>About Us</h3>
             <div className="container">
@@ -14,7 +14,7 @@ const About = ()=>{
 
                 </p>             
             </div>
-            <div className="social-media">
+            <div className="social-media" >
                 <div>
                 <a href="https://www.instagram.com/allcodebreaker/" target="_blank" rel="noopener noreferrer">
                     <span><i className="fab fa-instagram"></i></span>    

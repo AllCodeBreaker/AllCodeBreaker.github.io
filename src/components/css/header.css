@@ -29,7 +29,7 @@ nav a{
     color: var(--gray1);
 }
 nav a:hover {
-    color: var(--secondary);
+    color: var(--green);
     transition: 0.5s;
 }
 header p{
@@ -72,9 +72,10 @@ aside{
         position: absolute;
         right: 10px;
         top: 20px;
-        width: 30px;
+        width: 35px;
         font-size: x-large;
         cursor: pointer;
+        color: var(--brown);
     }
     aside{
         position: absolute;

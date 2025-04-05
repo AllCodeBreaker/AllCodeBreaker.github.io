@@ -7,6 +7,15 @@
   --brown: #333;
 
 }
+.gray{
+  color: var(--gray1);
+}
+.green{
+  color: var(--green);
+}
+.brown{
+  color: var(--brown);
+}
 
 main{
   margin-top: 60px;

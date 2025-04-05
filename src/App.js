@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 
 import './App.css';
-
+import "animate.css"
 
 import sideBarTitle from "./sideBarTitle";
 
