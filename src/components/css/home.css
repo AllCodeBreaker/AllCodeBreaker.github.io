@@ -13,11 +13,18 @@
     padding: 5px;
     cursor: pointer;
     transition: 0.3s;
+    animation: animateColor 3s infinite ;
 }
 
 #home .btn:hover{
     background-color: var(--green);
+    color: white;
     transition: 0.3s;
+}
+
+@keyframes animateColor {
+    from,to{color: rgb(9, 255, 0);}
+    50%{color: #009600;}
 }
 
 #type{

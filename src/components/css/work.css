@@ -1,0 +1,44 @@
+.work-container{
+    /* background-color: red; */
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.my-work{
+    background-color: var(--green);
+    color: white;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 30%;
+}
+
+@media  screen and (max-width: 600px) {
+    .my-work{
+        width: 60%;
+    }
+}
+
+.my-work p{
+    font-size: 50px;
+    color: #444;
+}
+.my-work div{
+    padding: 10px;
+}
+
+.my-work h3{
+    color: #333;
+}
+
+.my-work a{
+    text-decoration: underline;
+}
+.my-work a:hover{
+    color: #333;
+}
+
+.link{
+    color: black;
+}

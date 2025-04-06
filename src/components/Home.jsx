@@ -8,11 +8,11 @@ const Home = ()=>{
         <>
             <section id="home">
                 <div id="allwin-about" className="animate__animated animate__backInLeft">
-                    <h3>Hi, I am <span className="gray1">Allwin</span></h3>
+                    <h3>Hi, I am <span className="green">Allwin</span></h3>
                     {/* <p className="gray" id="type">Full Stack Developer</p> */}
                     <Typing />
                     <p>
-                        <a href="#skills" className="btn" >Learn More</a>
+                        <a href="myResume.pdf" className="btn" download={"resume.pdf"}><i className="fa-solid fa-download"></i> Download resume</a>
                     </p>
                 </div>
                 <div id="image" className="animate__animated animate__backInRight">
