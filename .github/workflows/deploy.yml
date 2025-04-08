@@ -1,36 +1,34 @@
-name: Deploy React app to GitHub Pages
+name: Deploy React App to GitHub Pages
 
-# Trigger the workflow on push to the `main` branch
 on:
   push:
     branches:
-      - main
+      - main  # or your default branch, like "master"
+  pull_request:
+    branches:
+      - main  # or your default branch, like "master"
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-    # Checkout the repository
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    # Set up Node.js environment
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14' # Specify the Node.js version (you can adjust this based on your project)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # You can set this to your preferred Node version
 
-    # Install dependencies
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    # Build the React app
-    - name: Build React app
-      run: npm run build
+      - name: Build the React app
+        run: npm run build
 
-    # Deploy to GitHub Pages
-    - name: Deploy to GitHub Pages
-      run: npm run deploy
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub automatically generates this token for you
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
