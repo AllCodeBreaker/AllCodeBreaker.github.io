@@ -1,32 +1,20 @@
-// import logo from './logo.svg';
-import Header from "./components/Header"
-import Home from "./components/Home";
-import About from "./components/About";
+import React from "react";
+import Header from "./components/Header";
 import Skills from "./components/Skills";
-import Works from "./components/Works";
-import Contact from "./components/Contact";
-
+import Projects from "./components/Projects";
+import Services from "./components/Services";
+import Footer from "./components/Footer";
 import './App.css';
-import "animate.css";
-
-
-import sideBarTitle from "./sideBarTitle";
-import skillsIHave from "./skillsIHave";
-
 
 function App() {
   return (
     <>
-      <Header sideBar={sideBarTitle} />
-      <main>
-        <Home />
-        <About />
-        <Skills myskills={skillsIHave}/>
-        <Works />
-      </main>
-      <Contact />
+      <Header />
+      <Skills />
+      <Projects />
+      <Services />
+      <Footer />
     </>
-    
   );
 }
 

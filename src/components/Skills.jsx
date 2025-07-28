@@ -1,60 +1,31 @@
-import React from "react";
 
-import "./css/skills.css";
+const skills = [
+  { label: "Python", percentage: 80 },
+  { label: "Java", percentage: 70 },
+  { label: "C", percentage: 60 },
+  { label: "JavaScript", percentage: 90 },
+  { label: "Version Control", percentage: 75 },
+  { label: "React", percentage: 70 },
+  { label: "Secure Coding", percentage: 60 },
+];
 
-
-const Skills = ({ myskills }) => {
-  const programming = myskills.Programming.content || [];
-  const frameworks = myskills.Frameworks.content || [];
-  const tools = myskills.Tools.content || [];
-  const softSkills = myskills.soft.content || [];
-
-  return (
-    <div id="skills" className="animate__animated animate__backInDown">
-      <h2>Skills</h2>
-      <center>
-      <div id="myskills">
-
-<div className="skill-container">
-  <h2>{myskills.Programming.title}</h2>
-  <div>
-    {programming.map((language, index) => (
-      <span key={index}>{language}</span>
-    ))}
-  </div>
-</div>
-<div className="skill-container">
-  <h2>{myskills.Frameworks.title}</h2>
-  <div>
-    {frameworks.map((framework, index) => (
-      <span key={index}>{framework}</span>
-    ))}
-  </div>
-</div>
-
-<div className="skill-container">
-  <h2>{myskills.Tools.title}</h2>
-  <div>
-    {tools.map((tool, index) => (
-      <span key={index}>{tool}</span>
-    ))}
-  </div>
-</div>
-
-<div className="skill-container">
-  <h2>{myskills.soft.title}</h2>
-  <div>
-    {softSkills.map((skill, index) => (
-      <span key={index}>{skill}</span>
-    ))}
-  </div>
-</div>
-          
+const Skills = () => (
+  <section>
+    <h2>Skills</h2>
+    <div className="skills">
+      {skills.map((skill, i) => (
+        <div className="skill" key={i}>
+          <div className="flex-r">
+            <div className="skill-label">{skill.label}</div>
+            <div className="skill-percentage">{skill.percentage}%</div>
           </div>
-
-      </center>
+          <div className="skill-bar">
+            <div className="skill-fill" style={{ width: `${skill.percentage}%` }}></div>
+          </div>
+        </div>
+      ))}
     </div>
-  );
-};
+  </section>
+);
 
 export default Skills;
