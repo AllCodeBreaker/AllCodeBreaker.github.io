@@ -24,4 +24,6 @@ const Typing = () => {
     return <span id="type" ref={el}></span>;
 };
 
-export default Typing;
+// export default Typing;
+
+//Not Used in Home page
