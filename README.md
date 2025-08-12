@@ -1,2 +1,3 @@
-# Portfolio
-## This is my portfolio build with ReactJS, [click here](https://allcodebreaker.github.io)
+# Personal Portfolio
+Hi👋, Im allwin a passionate programmer with an eager to explore new technologies and solve someone problem using software solutions. As a self taught programmer i have learnt a lot about technology not just to use it but how it actually works. Check my [portfolio](https://allcodebreaker.github.io) to know more...
+
