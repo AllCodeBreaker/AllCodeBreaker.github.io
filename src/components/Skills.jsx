@@ -1,12 +1,12 @@
 
 const skills = [
-  { label: "Python", percentage: 80 },
+  { label: "Python", percentage: 85 },
   { label: "Java", percentage: 70 },
   { label: "C", percentage: 60 },
-  { label: "JavaScript", percentage: 90 },
+  { label: "JavaScript", percentage: 80 },
   { label: "Version Control", percentage: 75 },
   { label: "React", percentage: 70 },
-  { label: "Secure Coding", percentage: 60 },
+  { label: "Secure Coding", percentage: 40 },
 ];
 
 const Skills = () => (

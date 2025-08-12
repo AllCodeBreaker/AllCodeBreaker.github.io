@@ -3,13 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>Contact me: john.doe@example.com | +123 456 7890</p>
       <div className="socials">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
+        <a href="https://github.com/allcodebreaker" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/allwin-a-023970291/" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/allcodebreaker/" target="_blank">Instagram</a>
+        
       </div>
-      <p>&copy; 2025 John Doe. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} Allwin A. All rights reserved.</p>
     </footer>
   );
 };

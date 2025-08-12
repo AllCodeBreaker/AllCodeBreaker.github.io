@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "../App.css";
 import me from "../assets/me.png"; 
@@ -21,7 +21,8 @@ const Header = () => {
   return (
     <header>
       <img src={me} alt="Profile" />
-      <h1>John Doe</h1>
+      <h1>Allwin A</h1>
+      {/* <p>allcodebreaker</p> */}
       <div className="typing" ref={typedElement}></div>
       <p className="description">
         I am Allwin, a Full Stack developer with a passion for building scalable and efficient software systems...

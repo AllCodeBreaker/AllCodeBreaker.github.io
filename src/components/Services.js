@@ -1,4 +1,3 @@
-import React from "react";
 
 const Services = () => {
   return (
@@ -7,7 +6,7 @@ const Services = () => {
       <div className="services">
         <h3>Web Development</h3>
         <p>
-          I offer professional web development services, from simple static sites to complex web applications.
+          I offer professional web development services to solve your problems, from simple static sites to complex web applications.
           I focus on responsive, high-performance, and scalable design with modern technologies.
         </p>
       </div>
