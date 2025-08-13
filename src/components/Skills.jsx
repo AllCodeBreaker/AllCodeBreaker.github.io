@@ -10,6 +10,7 @@ const skills = [
 ];
 
 const Skills = () => (
+  <>
   <section>
     <h2>Skills</h2>
     <div className="skills">
@@ -29,6 +30,7 @@ const Skills = () => (
   <section>
   <LeetCodeStats />
   </section>
+  </>
 );
 
 export default Skills;
