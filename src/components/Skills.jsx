@@ -1,4 +1,4 @@
-
+import LeetCodeStats from "./LeetCodeStats.jsx";
 const skills = [
   { label: "Python", percentage: 85 },
   { label: "Java", percentage: 70 },
@@ -25,6 +25,9 @@ const Skills = () => (
         </div>
       ))}
     </div>
+  </section>
+  <section>
+  <LeetCodeStats />
   </section>
 );
 
