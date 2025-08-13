@@ -1,6 +1,6 @@
 const LeetCodeStats = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div>
       <h2>My LeetCode Stats</h2>
       <img
         src="https://leetcard.jacoblin.cool/Allwin_Allwin"
