@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allwin A - Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <meta name="description"
+        content="This is my portfolio, Here you can also learn a lot of IT related tools, technologies with sample code.">
+    <meta name="keywords" content="allCodeBreaker, html, css, javascript, react">
+    <!-- Typed.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="assets/me.png" alt="Profile" />
+            <h1>Allwin A</h1>
+            <p class="typing" id="typed"></p>
+        </div>
+        <div class="about-text">
+            <p class="description">
+                I am Allwin, a Full Stack developer with a passion for building scalable and efficient software
+                systems...
+            </p>
+            <a class="download-resume" href="assets/resume.pdf" download>Download Resume</a>
+
+        </div>
+    </header>
+
+    <!-- Skills -->
+    <section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <div class="flex-r">
+                    <div class="skill-label">Python</div>
+                    <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex-r">
+                    <div class="skill-label">Java</div>
+                    <div class="skill-percentage">70%</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex-r">
+                    <div class="skill-label">C</div>
+                    <div class="skill-percentage">60%</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex-r">
+                    <div class="skill-label">JavaScript</div>
+                    <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex-r">
+                    <div class="skill-label">Version Control</div>
+                    <div class="skill-percentage">75%</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex-r">
+                    <div class="skill-label">React</div>
+                    <div class="skill-percentage">70%</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex-r">
+                    <div class="skill-label">Secure Coding</div>
+                    <div class="skill-percentage">40%</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 40%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LeetCode Stats -->
+    <section>
+        <h2>My LeetCode Stats</h2>
+        <img src="https://leetcard.jacoblin.cool/Allwin_Allwin" alt="LeetCode Stats" class="leetcode-stats" />
+    </section>
+
+    <!-- Projects -->
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <img src="assets/start.bg.gif" class="project-image" alt="AJ Studio" />
+                <div class="card-content">
+                    <h3>AJ Studio</h3>
+                    <p>
+                        A portfolio Website for my senior friend using HTML, CSS, JavaScript.
+                    </p>
+                    <div class="tags">HTML, CSS, JavaScript, Netlify</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/start.bg.gif" class="project-image" alt="SimDocs" />
+                <div class="card-content">
+                    <h3>Simplified Documentations (SimDocs)</h3>
+                    <p>
+                        SimDocs is a collection of resources which helps you to learn new modules, frameworks, tools
+                        very quickly
+                        and properly.
+                    </p>
+                    <div class="tags">React</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section>
+        <h2>Services</h2>
+        <div class="services">
+            <h3>Web Development</h3>
+            <p>I offer professional web development services to solve your problems, from simple static sites to complex
+                web applications. I focus on responsive, high-performance, and scalable design with modern technologies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="socials">
+            <a href="https://github.com/allcodebreaker" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/allwin-a-023970291/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/allcodebreaker/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+        <p>&copy; <span id="year"></span> Allwin A. All rights reserved.</p>
+    </footer>
+
+    <!-- JS for Typed.js and Year -->
+    <script>
+        const typed = new Typed("#typed", {
+            strings: ["Programmer", "Full Stack Developer", "Tech Enthusiastic", "Problem Solver", "Software Developer", "Open Source Enthusiast"],
+            typeSpeed: 80,
+            backSpeed: 40,
+            backDelay: 1000,
+            loop: true
+        });
+
+        document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
