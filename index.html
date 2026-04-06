@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allwin A - Portfolio</title>
     <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <meta name="description"
         content="This is my portfolio, Here you can also learn a lot of IT related tools, technologies with sample code.">
     <meta name="keywords" content="allCodeBreaker, html, css, javascript, react">
-    <!-- Typed.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
@@ -20,7 +19,7 @@
         <div>
             <img src="assets/me.png" alt="Profile" />
             <h1>Allwin A</h1>
-            <p class="typing" id="typed"></p>
+            <p id="typing"></p>
         </div>
         <div class="about-text">
             <p class="description">
@@ -35,69 +34,130 @@
     <!-- Skills -->
     <section>
         <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill">
-                <div class="flex-r">
-                    <div class="skill-label">Python</div>
-                    <div class="skill-percentage">85%</div>
+        <div class="skills-grid">
+            <!-- Primary languages -->
+            <div class="skill-card">
+                <div class="skill-logo">🐍</div>
+                <div class="skill-info">
+                    <div class="skill-name">Python</div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 85%;"></div>
-                </div>
+                <div class="skill-level level-intermediate">Intermediate</div>
             </div>
-            <div class="skill">
-                <div class="flex-r">
-                    <div class="skill-label">Java</div>
-                    <div class="skill-percentage">70%</div>
+
+            <div class="skill-card">
+                <div class="skill-logo">☕</div>
+                <div class="skill-info">
+                    <div class="skill-name">Java</div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 70%;"></div>
-                </div>
+                <div class="skill-level level-advanced">Advanced</div>
             </div>
-            <div class="skill">
-                <div class="flex-r">
-                    <div class="skill-label">C</div>
-                    <div class="skill-percentage">60%</div>
+
+            <div class="skill-card">
+                <div class="skill-logo">💻</div>
+                <div class="skill-info">
+                    <div class="skill-name">C</div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 60%;"></div>
-                </div>
+                <div class="skill-level level-intermediate">Intermediate</div>
             </div>
-            <div class="skill">
-                <div class="flex-r">
-                    <div class="skill-label">JavaScript</div>
-                    <div class="skill-percentage">80%</div>
+
+            <div class="skill-card">
+                <div class="skill-logo">✨</div>
+                <div class="skill-info">
+                    <div class="skill-name">JavaScript</div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 80%;"></div>
-                </div>
+                <div class="skill-level level-intermediate">Intermediate</div>
             </div>
-            <div class="skill">
-                <div class="flex-r">
-                    <div class="skill-label">Version Control</div>
-                    <div class="skill-percentage">75%</div>
+
+            <!-- Backend frameworks / platforms -->
+            <div class="skill-card">
+                <div class="skill-logo">🧪</div>
+                <div class="skill-info">
+                    <div class="skill-name">Flask</div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 75%;"></div>
-                </div>
+                <div class="skill-level level-beginner">Beginner</div>
             </div>
-            <div class="skill">
-                <div class="flex-r">
-                    <div class="skill-label">React</div>
-                    <div class="skill-percentage">70%</div>
+
+            <div class="skill-card">
+                <div class="skill-logo">🚂</div>
+                <div class="skill-info">
+                    <div class="skill-name">Express</div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 70%;"></div>
-                </div>
+                <div class="skill-level level-beginner">Beginner</div>
             </div>
-            <div class="skill">
-                <div class="flex-r">
-                    <div class="skill-label">Secure Coding</div>
-                    <div class="skill-percentage">40%</div>
+
+            <div class="skill-card">
+                <div class="skill-logo">🌱</div>
+                <div class="skill-info">
+                    <div class="skill-name">Spring Boot</div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 40%;"></div>
+                <div class="skill-level level-intermediate">Intermediate</div>
+            </div>
+
+            <!-- Frontend / tooling -->
+            <div class="skill-card">
+                <div class="skill-logo">⚛️</div>
+                <div class="skill-info">
+                    <div class="skill-name">React</div>
                 </div>
+                <div class="skill-level level-intermediate">Intermediate</div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-logo">🔧</div>
+                <div class="skill-info">
+                    <div class="skill-name">Version Control (Git)</div>
+                </div>
+                <div class="skill-level level-intermediate">Intermediate</div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-logo">🐳</div>
+                <div class="skill-info">
+                    <div class="skill-name">Docker</div>
+                </div>
+                <div class="skill-level level-intermediate">Intermediate</div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-logo">🐧</div>
+                <div class="skill-info">
+                    <div class="skill-name">Linux</div>
+                </div>
+                <div class="skill-level level-beginner">Beginner</div>
+            </div>
+
+            <!-- Security & performance -->
+            <div class="skill-card">
+                <div class="skill-logo">⚡</div>
+                <div class="skill-info">
+                    <div class="skill-name">Performance Testing</div>
+                </div>
+                <div class="skill-level level-beginner">Beginner</div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-logo">🔒</div>
+                <div class="skill-info">
+                    <div class="skill-name">Secure Coding</div>
+                </div>
+                <div class="skill-level level-intermediate">Intermediate</div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-logo">🛡️</div>
+                <div class="skill-info">
+                    <div class="skill-name">OWASP</div>
+                </div>
+                <div class="skill-level level-beginner">Beginner</div>
+            </div>
+
+            <!-- Data -->
+            <div class="skill-card">
+                <div class="skill-logo">🗄️</div>
+                <div class="skill-info">
+                    <div class="skill-name">SQL</div>
+                </div>
+                <div class="skill-level level-beginner">Beginner</div>
             </div>
         </div>
     </section>
@@ -113,25 +173,31 @@
         <h2>Projects</h2>
         <div class="projects">
             <div class="card">
-                <img src="assets/start.bg.gif" class="project-image" alt="AJ Studio" />
+                <img src="assets/creator-portfolio.png" class="project-image" alt="Creator Portfolio Platform" />
                 <div class="card-content">
-                    <h3>AJ Studio</h3>
+                    <h3>Creator Portfolio Platform</h3>
                     <p>
-                        A portfolio Website for my senior friend using HTML, CSS, JavaScript.
+                        A portfolio Website for a youtube content creator using HTML, CSS, JavaScript. It is a simple and elegant platform to showcase the creator's work, achievements, and contact information. The website is designed to be responsive and user-friendly, allowing visitors to easily navigate through the creator's portfolio and learn more about their content.
                     </p>
-                    <div class="tags">HTML, CSS, JavaScript, Netlify</div>
+                    <div class="tags">React, Vercel</div>
+                    <div class="project-links">
+                        <a href="https://github.com/AllCodeBreaker/ancline-janofer-portfolio" target="_blank" rel="noreferrer" class="link-btn github-btn">GitHub</a>
+                        <a href="https://ancline-janofer-portfolio.vercel.app/" target="_blank" rel="noreferrer" class="link-btn live-btn">Live Demo</a>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="assets/start.bg.gif" class="project-image" alt="SimDocs" />
+            <div class="card" id="arena">
+                <img src="assets/CodeBreakers-Arena.png" class="project-image" alt="Codebreakers Arena" />
                 <div class="card-content">
-                    <h3>Simplified Documentations (SimDocs)</h3>
+                    <h3>Codebreakers Arena</h3>
                     <p>
-                        SimDocs is a collection of resources which helps you to learn new modules, frameworks, tools
-                        very quickly
-                        and properly.
+                        Codebreakers Arena is a platform that helps users to learn real world scenarios and technologies internals through  gamefied challenges. It provides a fun and interactive way to learn and practice coding skills, making it an ideal platform for both beginners and experienced developers looking to improve their technical abilities.
                     </p>
-                    <div class="tags">React</div>
+                    <div class="tags">Spring Boot, Docker, Redis, PostgreSQL</div>
+                    <div class="project-links" >
+                        <a href="https://github.com/AllCodeBreaker/codebreaker-arena" target="_blank" rel="noreferrer" class="link-btn github-btn">GitHub</a>
+                        <a href="#arena" target="_blank" rel="noreferrer" class="link-btn live-btn">In development</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,15 +224,42 @@
         <p>&copy; <span id="year"></span> Allwin A. All rights reserved.</p>
     </footer>
 
-    <!-- JS for Typed.js and Year -->
+    <!-- JS for Typing Animation and Year -->
     <script>
-        const typed = new Typed("#typed", {
-            strings: ["Programmer", "Full Stack Developer", "Tech Enthusiastic", "Problem Solver", "Software Developer", "Open Source Enthusiast"],
-            typeSpeed: 80,
-            backSpeed: 40,
-            backDelay: 1000,
-            loop: true
-        });
+        const strings = ["Programmer", "Full Stack Developer", "Tech Enthusiastic", "Problem Solver", "Software Developer", "Open Source Enthusiast"];
+        const typingElement = document.getElementById("typing");
+        let stringIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentString = strings[stringIndex];
+            
+            if (isDeleting) {
+                charIndex--;
+            } else {
+                charIndex++;
+            }
+
+            typingElement.textContent = currentString.substring(0, charIndex);
+
+            if (!isDeleting && charIndex === currentString.length) {
+                isDeleting = true;
+                setTimeout(type, 1000);
+                return;
+            }
+
+            if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                stringIndex = (stringIndex + 1) % strings.length;
+                setTimeout(type, 500);
+                return;
+            }
+
+            setTimeout(type, isDeleting ? 40 : 80);
+        }
+
+        type();
 
         document.getElementById("year").innerText = new Date().getFullYear();
     </script>
